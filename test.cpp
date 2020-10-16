@@ -10,13 +10,13 @@ TEST(EchoTest, EmptyString) {
     EXPECT_EQ("", echo(1,test_val));
 }
 TEST(EchoTest, number) {
-    char* test_val[2]; test_val[0] = "./c-echo";test_val[1] = "123"
+    char* test_val[2]; test_val[0] = "./c-echo";test_val[1] = "123";
     EXPECT_EQ("123", echo(2,test_val));
 }TEST(EchoTest, CombinedString) {
     char* test_val[3]; test_val[0] = "./c-echo";test_val[1] = "test";test_val[2]= "Case";
     EXPECT_EQ("test Case", echo(3,test_val));
 }TEST(EchoTest, specialChar) {
-    char* test_val[2]; test_val[0] = "./c-echo";test_val[1] = "!"
+    char* test_val[2]; test_val[0] = "./c-echo";test_val[1] = "!";
     EXPECT_EQ("!", echo(2,test_val));
 }
 
